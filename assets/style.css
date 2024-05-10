@@ -1,0 +1,235 @@
+:root {
+    --lightblue: #ADD8E6;
+    --darkgray: #393e46;
+    --darkblue: #00416A;
+}
+
+header {
+    background-color: var(--darkgray)	;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+header h1 {
+    font-size: 50px;
+    background-color: var(--lightblue);
+    color: var(--darkgray);
+    border-style: solid;
+    height: 60px;
+    width: 300px;
+    padding: 2px;
+    text-align: end;
+}
+
+header ul {
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav li {
+    font-size: 25px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    margin: 2px;
+    text-decoration: underline var(--lightblue);
+}
+nav a {
+    color: var(--lightblue);
+}
+
+.cool-background {
+    /*background-image: repeating-linear-gradient(315deg, transparent, transparent 100px, #00416A 28px, #00416A 200px);
+    background-color: #72A0C1; */
+    background-image: url(./images/cool-background.jpg);
+    height: 200px;
+    position: relative;
+}
+body {
+    background-color: #F0F8FF;
+    color: var(--darkblue);
+}
+
+section h4 {
+    background-color: var(--lightblue);
+    color: var(--darkgray);
+    display: flex;
+    flex-wrap: wrap;
+    width: 335px;
+    height: 60px;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    float: right;
+    font-size: 35px;
+    padding: 13px;
+}
+
+.left {
+    font-size: 60px;
+    text-align: left;
+    left: 120px;
+    flex-basis: 25%;
+    border-right: 5px solid black;
+    
+}
+
+.right {
+    font-size: 20px;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 60%; 
+    justify-content: end;
+    
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-right: 10px;
+    justify-content: end;
+}
+
+.vertical-line {
+    border-right: 3px solid var(--darkblue);
+    position: absolute;
+    left: 20%;
+    height: 100px;
+
+}
+
+p {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: end;
+    position: relative;
+    right: 0;
+}
+
+.container{
+    margin: 20px auto;
+    width: 100%;
+    height:800px; 
+    background-color: #F0F8FF;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: relative;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+    padding:20px;
+    border-radius:10px;
+    color: var(--darkblue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    -webkit-filter: brightness(85%);
+    border: solid var(--lightblue);
+    border-radius: 0;
+    border-width: 5px;
+    position: relative;
+}
+
+.box1 {
+    background-image: url(./images/box1.jpg);
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.box2 {
+    background-image: url(./images/box2.jpg);
+
+}
+
+.box3 {
+    background-image: url(./images/box3.jpg);
+}
+
+.box4 {
+    background-image: url(./images/box4.jpg);
+}
+
+.box5 {
+    background-image: url(./images/box5.jpg);
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover{
+    -webkit-filter: brightness(125%);
+}
+
+.container li {
+    background-color: var(--lightblue);
+    padding: 3%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-weight: bold;
+}
+
+.container h5 {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    font-size: small;
+}
+
+.container-row a:link {
+    text-decoration: none;
+}
+
+.horizontal-list {
+    display: flex;
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.horizontal-list a {
+    font-size: larger;
+    margin-right: 50px;
+    color: black !important;
+    text-decoration: underline var(--darkblue) !important;
+}
+
+@media screen and (max-width: 768px) {
+    header, main {
+    flex-direction: column;
+    }
+
+    section {
+    padding-right: 0;
+    }
+
+    .right {
+        flex-basis: 100%;
+    }
+
+    .left {
+        flex-basis: 100%;
+    }
+
+    .horizontal-list {
+        flex-direction: column;
+    }
+}
