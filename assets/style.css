@@ -1,3 +1,4 @@
+/*Creating variables for colors that are used multiple times */
 :root {
     --lightblue: #ADD8E6;
     --darkgray: #393e46;
@@ -122,6 +123,7 @@ p {
     right: 0;
 }
 
+/* Creates grid*/
 .container{
     margin: 20px auto;
     width: 100%;
@@ -149,12 +151,12 @@ p {
     position: relative;
 }
 
+/* Gives a background img for the boxes in the grid*/
 .box1 {
     background-image: url(./images/box1.jpg);
     grid-column: span 2;
     grid-row: span 2;
 }
-
 .box2 {
     background-image: url(./images/box2.jpg);
 
@@ -204,7 +206,7 @@ p {
     justify-content: space-evenly;
     align-items: center;
 }
-
+/* Formats links at bottom of the website*/
 .horizontal-list a {
     font-size: larger;
     margin-right: 50px;
@@ -212,6 +214,7 @@ p {
     text-decoration: underline var(--darkblue) !important;
 }
 
+/*Allows website to adjust to screen size / devices */
 @media screen and (max-width: 768px) {
     header, main {
     flex-direction: column;
